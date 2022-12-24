@@ -23,8 +23,15 @@
         /// 이 메서드의 내용을 코드 편집기로 수정하지 마세요.
         /// </summary>
         private void InitializeComponent() {
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.btnLogin = new MetroFramework.Controls.MetroButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.centerLayout = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.metroButton2 = new MetroFramework.Controls.MetroButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnMail = new System.Windows.Forms.Button();
             this.btnAdmin = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
@@ -33,22 +40,23 @@
             this.btnGrade = new System.Windows.Forms.Button();
             this.btnAddUser = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
-            this.centerLayout = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.metroButton3 = new MetroFramework.Controls.MetroButton();
+            this.metroButton4 = new MetroFramework.Controls.MetroButton();
+            this.metroButton5 = new MetroFramework.Controls.MetroButton();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // metroButton1
+            // btnLogin
             // 
-            this.metroButton1.Location = new System.Drawing.Point(13, 275);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(167, 29);
-            this.metroButton1.TabIndex = 0;
-            this.metroButton1.Text = "LOGIN";
-            this.metroButton1.UseSelectable = true;
+            this.btnLogin.Location = new System.Drawing.Point(13, 275);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(167, 29);
+            this.btnLogin.TabIndex = 0;
+            this.btnLogin.Text = "LOGIN";
+            this.btnLogin.UseSelectable = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // panel2
             // 
@@ -64,6 +72,83 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(807, 75);
             this.panel2.TabIndex = 2;
+            // 
+            // centerLayout
+            // 
+            this.centerLayout.Location = new System.Drawing.Point(223, 141);
+            this.centerLayout.Name = "centerLayout";
+            this.centerLayout.Size = new System.Drawing.Size(807, 542);
+            this.centerLayout.TabIndex = 4;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.metroButton4);
+            this.panel3.Controls.Add(this.metroButton5);
+            this.panel3.Controls.Add(this.metroButton3);
+            this.panel3.Controls.Add(this.metroButton2);
+            this.panel3.Controls.Add(this.metroLabel3);
+            this.panel3.Controls.Add(this.metroLabel2);
+            this.panel3.Controls.Add(this.metroLabel1);
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Controls.Add(this.btnLogin);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(23, 60);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(193, 626);
+            this.panel3.TabIndex = 5;
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel1.Location = new System.Drawing.Point(13, 356);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(37, 19);
+            this.metroLabel1.TabIndex = 2;
+            this.metroLabel1.Text = "이름";
+            this.metroLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel2.Location = new System.Drawing.Point(13, 385);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(37, 19);
+            this.metroLabel2.TabIndex = 3;
+            this.metroLabel2.Text = "부서";
+            this.metroLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel3.Location = new System.Drawing.Point(13, 328);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(23, 19);
+            this.metroLabel3.TabIndex = 4;
+            this.metroLabel3.Text = "ID";
+            this.metroLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // metroButton2
+            // 
+            this.metroButton2.BackgroundImage = global::emp_Manager.Properties.Resources.MailNo;
+            this.metroButton2.Location = new System.Drawing.Point(27, 440);
+            this.metroButton2.Name = "metroButton2";
+            this.metroButton2.Size = new System.Drawing.Size(64, 64);
+            this.metroButton2.TabIndex = 5;
+            this.metroButton2.Text = "metroButton2";
+            this.metroButton2.UseSelectable = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::emp_Manager.Properties.Resources.LogoCompany;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 57);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(167, 212);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // btnMail
             // 
@@ -161,30 +246,35 @@
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // centerLayout
+            // metroButton3
             // 
-            this.centerLayout.Location = new System.Drawing.Point(223, 141);
-            this.centerLayout.Name = "centerLayout";
-            this.centerLayout.Size = new System.Drawing.Size(807, 542);
-            this.centerLayout.TabIndex = 4;
+            this.metroButton3.BackgroundImage = global::emp_Manager.Properties.Resources.MailNo;
+            this.metroButton3.Location = new System.Drawing.Point(97, 440);
+            this.metroButton3.Name = "metroButton3";
+            this.metroButton3.Size = new System.Drawing.Size(64, 64);
+            this.metroButton3.TabIndex = 6;
+            this.metroButton3.Text = "metroButton3";
+            this.metroButton3.UseSelectable = true;
             // 
-            // panel3
+            // metroButton4
             // 
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Controls.Add(this.metroButton1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(23, 60);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(193, 626);
-            this.panel3.TabIndex = 5;
+            this.metroButton4.BackgroundImage = global::emp_Manager.Properties.Resources.MailNo;
+            this.metroButton4.Location = new System.Drawing.Point(97, 510);
+            this.metroButton4.Name = "metroButton4";
+            this.metroButton4.Size = new System.Drawing.Size(64, 64);
+            this.metroButton4.TabIndex = 8;
+            this.metroButton4.Text = "metroButton4";
+            this.metroButton4.UseSelectable = true;
             // 
-            // pictureBox1
+            // metroButton5
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(13, 73);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(167, 196);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.metroButton5.BackgroundImage = global::emp_Manager.Properties.Resources.MailNo;
+            this.metroButton5.Location = new System.Drawing.Point(27, 510);
+            this.metroButton5.Name = "metroButton5";
+            this.metroButton5.Size = new System.Drawing.Size(64, 64);
+            this.metroButton5.TabIndex = 7;
+            this.metroButton5.Text = "metroButton5";
+            this.metroButton5.UseSelectable = true;
             // 
             // FormMain
             // 
@@ -200,6 +290,7 @@
             this.Text = "사원 관리 프로그램";
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -207,7 +298,7 @@
 
         #endregion
 
-        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton btnLogin;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel centerLayout;
         private System.Windows.Forms.Button btnAdmin;
@@ -220,6 +311,13 @@
         private System.Windows.Forms.Button btnMail;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private MetroFramework.Controls.MetroButton metroButton2;
+        private MetroFramework.Controls.MetroLabel metroLabel3;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroButton metroButton4;
+        private MetroFramework.Controls.MetroButton metroButton5;
+        private MetroFramework.Controls.MetroButton metroButton3;
     }
 }
 

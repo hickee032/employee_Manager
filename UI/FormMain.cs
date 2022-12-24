@@ -1,4 +1,5 @@
 ﻿using emp_Manager.adapter;
+using emp_Manager.ui;
 using emp_Manager.UI;
 using System;
 using System.Collections.Generic;
@@ -103,9 +104,13 @@ namespace emp_Manager {
             this.Text = "도움말";
             controllView(new UCHelp(), UC_HELPUSER);
         }
+
+
         #endregion
 
-
-
+        private void btnLogin_Click(object sender, EventArgs e) {
+            FormLogin formlogin = new FormLogin();
+            formlogin.ShowDialog();
+        }
     }
 }
