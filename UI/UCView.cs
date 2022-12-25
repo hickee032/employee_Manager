@@ -57,8 +57,5 @@ namespace emp_Manager.UI {
             }
 
         }
-
-
-
     }
 }

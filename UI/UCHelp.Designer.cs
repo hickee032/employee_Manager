@@ -30,7 +30,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Name = "UCHelp";
-            this.Size = new System.Drawing.Size(706, 450);
+            this.Size = new System.Drawing.Size(535, 545);
             this.ResumeLayout(false);
 
         }

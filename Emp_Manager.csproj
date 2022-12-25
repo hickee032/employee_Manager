@@ -97,6 +97,12 @@
     <Compile Include="adapter\BaseAdapter.cs" />
     <Compile Include="dao\DaoOracle.cs" />
     <Compile Include="model\Employee.cs" />
+    <Compile Include="model\Notice.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ui\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,14 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="ui\UCAdmin.resx">
       <DependentUpon>UCAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -250,10 +251,19 @@
     <None Include="Resources\LogoCompany.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\MailNo.png" />
+    <None Include="Resources\mail.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\MailYes.png" />
+    <None Include="Resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poster2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poster3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poster1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />

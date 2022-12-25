@@ -153,9 +153,9 @@ namespace emp_Manager.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap MailNo {
+        internal static System.Drawing.Bitmap mail {
             get {
-                object obj = ResourceManager.GetObject("MailNo", resourceCulture);
+                object obj = ResourceManager.GetObject("mail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +163,39 @@ namespace emp_Manager.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap MailYes {
+        internal static System.Drawing.Bitmap money {
             get {
-                object obj = ResourceManager.GetObject("MailYes", resourceCulture);
+                object obj = ResourceManager.GetObject("money", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap poster1 {
+            get {
+                object obj = ResourceManager.GetObject("poster1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap poster2 {
+            get {
+                object obj = ResourceManager.GetObject("poster2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap poster3 {
+            get {
+                object obj = ResourceManager.GetObject("poster3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

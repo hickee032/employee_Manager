@@ -80,12 +80,10 @@ namespace emp_Manager.dao {
 
             List<Employee> empList = new List<Employee>();
 
-            CultureInfo provider = new CultureInfo("en-US");
-
             if (dr.HasRows) {
                 while (dr.Read()) {
 
-                    Console.WriteLine($"사번 : {dr["eno"]}");
+                    //Console.WriteLine($"사번 : {dr["eno"]}");
 
                     empList.Add(new Employee(
                         dr["id"].ToString(),
@@ -107,8 +105,33 @@ namespace emp_Manager.dao {
 
             }
             return empList;
+        }
 
+        public List<Notice> ShowNotice() {
 
+            Console.WriteLine(11111111111111111111);
+
+            string query = "select * from notice_t";
+            cmd.Connection = conn;
+            cmd.CommandText = query;
+            cmd.CommandType = System.Data.CommandType.Text;
+
+            OracleDataReader dr = cmd.ExecuteReader();
+
+            List<Notice> notList = new List<Notice>();
+
+            if (dr.HasRows) {
+                while (dr.Read()) {
+
+                    notList.Add(new Notice(
+                        dr["notice"].ToString()
+                        )); ;
+                }
+            }
+            else {
+                Console.WriteLine("데이터가 존재하지 않습니다");
+            }
+            return notList;
         }
 
 
